@@ -1,0 +1,50 @@
+.header {
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    text-align: center;
+    position: relative;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    letter-spacing: 12px;
+    font-weight: 400;
+    color: var(--gothic-purple);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.logo-ornament {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 8px;
+}
+
+.logo-ornament span {
+    display: block;
+    height: 1px;
+}
+
+.logo-ornament span:first-child,
+.logo-ornament span:last-child {
+    width: 30px;
+    background: linear-gradient(90deg, transparent, var(--gothic-gold));
+}
+
+.logo-ornament span:last-child {
+    background: linear-gradient(90deg, var(--gothic-gold), transparent);
+}
+
+.logo-ornament span:nth-child(2) {
+    width: 10px;
+    background-color: var(--gothic-gold);
+}

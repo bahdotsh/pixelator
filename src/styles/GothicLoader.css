@@ -1,0 +1,65 @@
+.gothic-loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.gothic-loader-symbol {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.cross-vertical {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 60px;
+    background-color: var(--gothic-gold);
+    transform: translateX(-50%);
+}
+
+.cross-horizontal {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: var(--gothic-gold);
+    transform: translateY(-50%);
+}
+
+.loader-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--gothic-gold);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s infinite alternate;
+}
+
+.gothic-loader p {
+    font-family: var(--font-gothic);
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    color: var(--gothic-purple);
+    text-transform: uppercase;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}
